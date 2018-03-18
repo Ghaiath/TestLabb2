@@ -1,17 +1,17 @@
 package test1;
 
-public class Calculator implements Adder, Substractor {
-
-	@Override
-	public double substract(long... operands) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public double add(long... operands) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-}
+public class Calculator {
+	
+		public static int add(int number1, int number2) {
+		return number1 + number2;	
+		
+		public static int sub(int number1, int number2) {
+			return number1 + number2;	
+			
+		public static int mul(int number1, int number2) {
+				return number1 + number2;	
+				
+		public static int div(int number1, int number2) {
+					return number1 + number2;	
+		}
+		}
