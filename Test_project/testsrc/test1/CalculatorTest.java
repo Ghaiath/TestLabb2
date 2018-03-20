@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
+	
+	Calculator Calc = new Calculator();
 
 	@Test
 	void AddTest() {
@@ -12,7 +14,7 @@ class CalculatorTest {
 		double b = 20;
 		
 		double expexted = 35;
-		double result = Calculator.add(a, b);
+		double result = Calc.add(a, b);
 		
 		assertEquals(expexted, result, 0.000001);
 	}
@@ -23,7 +25,7 @@ class CalculatorTest {
 		double b = 20;
 		
 		double expexted = -5;
-		double result = Calculator.sub(a, b);
+		double result = Calc.sub(a, b);
 		
 		assertEquals(expexted, result, 0.000001);
 	}
@@ -34,7 +36,7 @@ class CalculatorTest {
 		double b = 20;
 		
 		double expexted = 100;
-		double result = Calculator.mul(a, b);
+		double result = Calc.mul(a, b);
 		
 		assertEquals(expexted, result, 0.000001);
 	}
@@ -42,11 +44,19 @@ class CalculatorTest {
 	@Test
 	void DivTest() {
 		double a = 20;
-		double b = 5;
+		double b = 4;
 		
-		double expexted = 4;
-		double result = Calculator.div(a, b);
+		double expexted = 5;
+		double result = Calc.div(a, b);
 		
 		assertEquals(expexted, result, 0.000001);
+	}
+	
+	@Test
+	void ValidityTest() {
+		String Expression = "1+2+3a4-5+6*6/7/8";
+		boolean expexted = false;
+		boolean result = Calc.CheckValidity(Expression);
+		assertFalse(result == expexted);		
 	}
 }

@@ -4,5 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="testsrc"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="E:/System Integtator/Testdriven utveckling/commons-net-3.6-bin/commons-net-3.6/commons-net-3.6.jar"/>
+	<classpathentry kind="lib" path="E:/System Integtator/Testdriven utveckling/commons-lang3-3.7-bin/commons-lang3-3.7/commons-lang3-3.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
