@@ -54,7 +54,7 @@ class CalculatorTest {
 	
 	@Test
 	void ValidityTest() {
-		String Expression = "1+2+3a4-5+6*6/7/8";
+		String Expression = "2+1%56/2";
 		boolean expexted = false;
 		boolean result = Calc.CheckValidity(Expression);
 		assertFalse(result == expexted);		
